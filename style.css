@@ -255,6 +255,7 @@ section h2::after {
 
 #experiencias article,
 #projetos article,
+#portfolio article,
 #competencias article {
   background: linear-gradient(165deg, rgba(11, 24, 51, 0.86), rgba(6, 16, 36, 0.88));
   border: 1px solid var(--card-border);
@@ -267,6 +268,7 @@ section h2::after {
 
 #experiencias article:hover,
 #projetos article:hover,
+#portfolio article:hover,
 #competencias article:hover {
   transform: translateY(-4px);
   border-color: rgba(28, 242, 161, 0.55);
@@ -311,6 +313,39 @@ article strong {
 
 #projetos li {
   margin-bottom: 6px;
+}
+
+#portfolio > p {
+  max-width: 1080px;
+  color: var(--text-secondary);
+  font-size: clamp(18px, 1.05vw, 22px);
+  margin-bottom: 24px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.portfolio-grid article {
+  margin-bottom: 0;
+}
+
+.portfolio-frame {
+  margin-top: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(28, 242, 161, 0.35);
+  background: rgba(2, 10, 23, 0.8);
+}
+
+.portfolio-frame iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 380px;
+  border: none;
 }
 
 #competencias > p {
@@ -431,5 +466,9 @@ footer {
   #projetos,
   #competencias > div {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-frame iframe {
+    min-height: 320px;
   }
 }
