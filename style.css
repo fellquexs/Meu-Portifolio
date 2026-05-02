@@ -394,6 +394,16 @@ progress::-moz-progress-bar {
   font-weight: 700;
 }
 
+#portfolio a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#portfolio a:hover {
+  text-decoration: underline;
+}
+
 #contato a:hover {
   text-decoration: underline;
 }

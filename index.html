@@ -4,358 +4,172 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Gustavo Felix | Intro</title>
+  <meta name="description" content="IntroduÃ§Ã£o do portfÃ³lio de Gustavo Felix.">
+  <style>
+    :root {
+      --bg-1: #020b1c;
+      --bg-2: #021637;
+      --accent: #00e998;
+      --text: #f3f8ff;
+      --muted: #b9c8dd;
+    }
 
-  <title>Gustavo Félix | Energia, Dados e Soluções Digitais</title>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <meta name="description" content="Portfólio profissional de Gustavo Félix, focado em energia, Power BI, pricing, estudos energéticos, automação e soluções digitais.">
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    body {
+      font-family: "Manrope", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(760px 460px at 72% 18%, rgba(10, 116, 189, 0.34), transparent 68%),
+        radial-gradient(560px 400px at 18% 68%, rgba(0, 233, 152, 0.18), transparent 70%),
+        linear-gradient(120deg, var(--bg-1) 0%, #02112a 46%, var(--bg-2) 100%);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+    .intro {
+      width: min(1120px, 92vw);
+      padding: 44px 26px;
+      text-align: center;
+    }
+
+    .typing-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    .intro-name {
+      font-size: clamp(34px, 5vw, 80px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+      color: var(--accent);
+    }
+
+    .typing {
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 700;
+      font-size: clamp(20px, 2.4vw, 38px);
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+      color: var(--text);
+      border-right: 3px solid var(--accent);
+      padding-right: 4px;
+      animation: cursor 0.8s step-end infinite;
+    }
+
+    .typing .accent {
+      color: var(--accent);
+    }
+
+    .hint {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: clamp(14px, 1.2vw, 20px);
+    }
+
+    .skip {
+      margin-top: 26px;
+      display: inline-block;
+      border: 1px solid rgba(0, 233, 152, 0.55);
+      border-radius: 10px;
+      background: rgba(2, 16, 38, 0.72);
+      color: var(--text);
+      font: inherit;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 18px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .skip:hover {
+      background: rgba(0, 233, 152, 0.14);
+      transform: translateY(-1px);
+    }
+
+    @keyframes cursor {
+      50% { border-color: transparent; }
+    }
+
+    @media (max-width: 840px) {
+      .typing {
+        white-space: normal;
+        font-size: clamp(18px, 5.2vw, 30px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .typing {
+        animation: none;
+        border-right: none;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
-  <header>
-    <nav>
-      <h1>Gustavo Estevo Felix</h1>
-
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#experiencias">Experiências</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#competencias">Competências</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-<section id="inicio" class="hero">
-
-  <div class="hero-foto">
-    <img src="assets/img/perfil.jpg" alt="Foto de Gustavo Estevo Felix">
-  </div>
-
-  <div class="hero-conteudo">
-    <p class="hero-tag">MBA Gestão de Energia • Dados • Automação • Soluções Digitais</p>
-
-    <h2>
-      Gustavo<br>
-      <span>Estevo Felix</span>
-    </h2>
-
-    <div class="hero-linha"></div>
-
-    <p class="hero-frase">
-      Transformo dados do setor energético em
-      <strong>soluções digitais, inteligência comercial</strong>
-      e eficiência operacional.
-    </p>
-
-    <p class="hero-descricao">
-      Atuo conectando mercado de energia, pricing, estudos energéticos,
-      automação de processos, Power BI e desenvolvimento de soluções para
-      apoiar decisões técnicas, comerciais e estratégicas.
-    </p>
-  </div>
-
-</section>
-
-    <section id="sobre">
-      <h2>Sobre mim</h2>
-
-      <p>
-        Atuo no setor elétrico com foco em pricing, estudos energéticos e desenvolvimento de novos negócios,
-        sempre buscando soluções inovadoras e estratégias que promovam eficiência e sustentabilidade.
-      </p>
-
-      <p>
-        Tenho habilidade em análise de dados e automação de processos, utilizando ferramentas como Python,
-        PowerApps e SharePoint para otimizar fluxos de trabalho e melhorar a eficiência operacional.
-        Minha atuação inclui a criação de dashboards interativos, automação de relatórios e o desenvolvimento
-        de soluções personalizadas para apoiar decisões estratégicas.
-      </p>
-
-      <p>
-        Com conhecimento em regulamentações e funcionamento do mercado de energia, desenvolvo análises que
-        auxiliam na tomada de decisões comerciais e técnicas, sempre alinhadas às demandas do setor.
-      </p>
-
-      <p>
-        Busco explorar a conexão entre tecnologia e mercado, utilizando ferramentas modernas para simplificar
-        processos e gerar resultados concretos para tomada de decisões.
-      </p>
-
-      <p>
-        Também possuo MBA em Gestão de Energia, fortalecendo minha visão integrada entre mercado,
-        regulação, estratégia e dados.
-      </p>
-    </section>
-
-    <section id="experiencias">
-  <h2>Minhas experiências profissionais</h2>
-
-  <article>
-    <h3>Analista de Qualidade e Soluções Digitais</h3>
-    <p><strong>Vora Energia S.A.</strong></p>
-    <p>Atualmente • São Paulo, Brasil</p>
-
-    <p>
-      Atuo no desenvolvimento e implementação do plano de automação da VORA Energia, criando soluções
-      que ampliam o acesso dos clientes aos seus dados. Desenvolvo e aprimoro rotinas de coleta,
-      processamento e análise de dados, além de estruturar dashboards e relatórios que facilitam
-      a tomada de decisão dos clientes.
-    </p>
-
-    <p>
-      Também trabalho na otimização de processos internos e no desenvolvimento de novos produtos voltados
-      para as necessidades dos clientes, garantindo maior eficiência e inteligência na gestão de energia
-      elétrica e qualidade dos dados.
-    </p>
-  </article>
-
-  <article>
-    <h3>Analista de Inteligência e Risco</h3>
-    <p><strong>IBS Energy</strong></p>
-    <p>mar de 2023 até set de 2023 • 7 meses • São Paulo, Brasil • Híbrido</p>
-
-    <p>
-      Atuei na análise de dados e tendências do mercado de energia, apoiando a construção de estratégias
-      comerciais e a gestão de portfólio da empresa. Trabalhei na identificação e mitigação de riscos,
-      transformando informações de mercado em oportunidades de negócio.
-    </p>
-
-    <p>
-      Também participei do desenvolvimento de novos produtos, elaboração de relatórios executivos
-      e acompanhamento de KPIs, sempre com foco em apoiar decisões estratégicas e comerciais no ACL.
-    </p>
-  </article>
-
-  <article>
-    <h3>Analista de Middle Office Jr.</h3>
-    <p><strong>2W Energia</strong></p>
-    <p>jul de 2022 até mar de 2023 • 9 meses</p>
-
-    <p>
-      Atuei no desenvolvimento de ferramentas para automatização de processos de Middle Office utilizando Python,
-      além de apoiar a geração de cenários e simulações para estudos energéticos.
-    </p>
-
-    <p>
-      Também acompanhei informações operacionais do Sistema Interligado Nacional e atuei em conjunto com a mesa
-      de trading no suporte à tomada de decisão.
-    </p>
-  </article>
-
-</section>
-    <section id="projetos">
-      <h2>Projetos em destaque</h2>
-
-      <article>
-        <h3>Cockpit Comercial</h3>
-        <p><strong>Área:</strong> Comercial</p>
-
-        <p>
-          Desenvolvimento de ferramenta para acompanhamento da carteira comercial e gestão dos clientes
-          em tempo real, consolidando informações relevantes para priorização de oportunidades,
-          acompanhamento de propostas e tomada de decisão.
-        </p>
-
-        <ul>
-          <li>Acompanhamento da carteira comercial.</li>
-          <li>Gestão de clientes on time.</li>
-          <li>Indicadores comerciais e operacionais.</li>
-          <li>Visão executiva para tomada de decisão.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Demonstrativos de Energia</h3>
-        <p><strong>Área:</strong> Gestão de Energia</p>
-
-        <p>
-          Desenvolvimento de relatórios e indicadores para acompanhamento de custos, níveis de contratação,
-          exposição, economia frente ao Mercado Livre de Energia e desempenho da estratégia energética dos clientes.
-        </p>
-
-        <ul>
-          <li>Acompanhamento de custos de energia.</li>
-          <li>Níveis de contratação.</li>
-          <li>Exposição ao mercado.</li>
-          <li>Economia frente ao Mercado Livre de Energia.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Estruturação do Projeto de Gás</h3>
-        <p><strong>Área:</strong> Gás Natural</p>
-
-        <p>
-          Estruturação de projeto voltado à análise e gestão de informações de Gás Natural,
-          incluindo avaliação de cláusulas contratuais, faturas, demonstrativos e evolução de consumo.
-        </p>
-
-        <ul>
-          <li>Análise de Take or Pay.</li>
-          <li>Gestão de faturas de gás.</li>
-          <li>Demonstrativos gerenciais.</li>
-          <li>Acompanhamento da evolução de consumo e custos de Gás Natural.</li>
-        </ul>
-      </article>
-
-      <article>
-        <h3>Relatórios de Geração Distribuída</h3>
-        <p><strong>Área:</strong> Geradores</p>
-
-        <p>
-          Estruturação de relatórios para acompanhamento da performance de economia em projetos de Geração
-          Distribuída, conectando consumo, compensação, saldo de energia e economia gerada.
-        </p>
-
-        <ul>
-          <li>Acompanhamento da performance de economia.</li>
-          <li>Indicadores de compensação.</li>
-          <li>Gestão de saldo de energia.</li>
-          <li>Visão por unidade consumidora.</li>
-        </ul>
-      </article>
-    </section>
-
-    <section id="portfolio">
-      <h2>Portfólio</h2>
-
-      <p>
-        Cases publicados no Power BI com foco em análise de dados, indicadores e visualização executiva.
-      </p>
-
-      <div class="portfolio-grid">
-        <article>
-          <h3>Case: Avaliação de Performance de Vendas em Empresa de Brinquedos</h3>
-          <p><strong>Dashboard:</strong> Data Toys</p>
-          <div class="portfolio-frame">
-            <iframe
-              title="Data Toys"
-              src="https://app.powerbi.com/view?r=eyJrIjoiM2ZhNjgyMWMtNDQ2Yi00NGFkLWE4ZjQtZTRlNWI2N2M1NWY0IiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9"
-              loading="lazy"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </article>
-
-        <article>
-          <h3>Case: Acompanhamento do Mercado Livre Varejista no Brasil</h3>
-          <p><strong>Dashboard:</strong> Mercado Varejista</p>
-          <div class="portfolio-frame">
-            <iframe
-              title="Mercado Varejista"
-              src="https://app.powerbi.com/view?r=eyJrIjoiNWM5ZjljMGUtODg4ZC00NjMxLWI2ZmItMDEwMWZkODQ2OWM1IiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9"
-              loading="lazy"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </article>
-
-        <article>
-          <h3>Case: Desempenho de Produtos Microsoft com HTML e CSS</h3>
-          <p><strong>Dashboard:</strong> Dashboard Comercial</p>
-          <div class="portfolio-frame">
-            <iframe
-              title="Dashboard Comercial"
-              src="https://app.powerbi.com/view?r=eyJrIjoiN2ZjMjUyOGYtY2Y5Ni00OTFjLWEwOTAtOTA4MDU2MGEwNGU2IiwidCI6ImZlODc4N2JjLWM5MTQtNDY2NS04NTQ3LTI2OGUxNWNiMGQ5YSJ9"
-              loading="lazy"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="competencias">
-      <h2>Competências</h2>
-
-      <p>
-        Principais ferramentas e conhecimentos aplicados nos meus projetos:
-      </p>
-
-      <div>
-        <article>
-          <h3>SQL</h3>
-          <progress value="75" max="100">75%</progress>
-        </article>
-
-        <article>
-          <h3>Modelagem de Dados</h3>
-          <progress value="85" max="100">85%</progress>
-        </article>
-
-        <article>
-          <h3>DAX</h3>
-          <progress value="90" max="100">90%</progress>
-        </article>
-
-        <article>
-          <h3>Power BI</h3>
-          <progress value="95" max="100">95%</progress>
-        </article>
-
-        <article>
-          <h3>Linguagem M</h3>
-          <progress value="85" max="100">85%</progress>
-        </article>
-
-        <article>
-          <h3>Python</h3>
-          <progress value="80" max="100">80%</progress>
-        </article>
-
-        <article>
-          <h3>Excel</h3>
-          <progress value="90" max="100">90%</progress>
-        </article>
-
-        <article>
-          <h3>HTML</h3>
-          <progress value="65" max="100">65%</progress>
-        </article>
-      </div>
-    </section>
-
-    <section id="contato">
-      <h2>Contato</h2>
-
-      <p>
-        Quer trocar uma ideia sobre energia, dados, Power BI ou soluções digitais?
-      </p>
-
-      <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/gustavo-felix-688865195" target="_blank">
-          www.linkedin.com/in/gustavo-felix-688865195
-        </a>
-      </p>
-
-      <p>
-        GitHub:
-        <a href="https://github.com/fellquexs/Meu-Portifolio.git" target="_blank">
-          github.com/fellquexs/Meu-Portifolio
-        </a>
-      </p>
-    </section>
-
+  <main class="intro" aria-label="Introdução do portfólio">
+    <h1 class="intro-name">Gustavo Felix</h1>
+    <div class="typing-wrap" aria-live="polite">
+      <h2 class="typing" id="typing-target" aria-label="Redirecionando ao Portfólio"></h2>
+    </div>
+    <button class="skip" type="button" id="skip-intro">Entrar agora</button>
   </main>
 
-  <footer>
-    <p>© 2026 Gustavo Félix. Energia, dados e decisão.</p>
-  </footer>
+  <script>
+    (function () {
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const fullText = "Redirecionando ao Portfólio";
+      const target = document.getElementById("typing-target");
+      const baseDelay = prefersReducedMotion ? 0 : 90;
+      const postTypingPause = prefersReducedMotion ? 1400 : 2800;
+      const goToPortfolio = function () {
+        window.location.href = "portfolio.html";
+      };
 
+      if (prefersReducedMotion) {
+        target.textContent = fullText;
+      } else {
+        let index = 0;
+        const timer = window.setInterval(function () {
+          index += 1;
+          const typed = fullText.slice(0, index);
+          const splitToken = " - ";
+          const tokenIndex = typed.indexOf(splitToken);
+
+          if (tokenIndex === -1) {
+            target.textContent = typed;
+          } else {
+            const left = typed.slice(0, tokenIndex + splitToken.length);
+            const right = typed.slice(tokenIndex + splitToken.length);
+            target.innerHTML = left + "<span class=\"accent\">" + right + "</span>";
+          }
+
+          if (index >= fullText.length) {
+            window.clearInterval(timer);
+          }
+        }, baseDelay);
+      }
+
+      document.getElementById("skip-intro").addEventListener("click", goToPortfolio);
+      window.setTimeout(goToPortfolio, (fullText.length * baseDelay) + postTypingPause);
+    })();
+  </script>
 </body>
 </html>
-
 
 
